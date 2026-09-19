@@ -6,6 +6,7 @@ __pycache__/
 # Large dataset files (downloaded via python download_data.py)
 data/*.csv
 data/*.CSV
+!data/sample_books.csv
 
 # Model checkpoints / R workspace cache
 .Rhistory

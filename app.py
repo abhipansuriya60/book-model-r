@@ -65,9 +65,11 @@ def load_books_index():
     books_file = os.path.join(DATA_DIR, "Books.csv")
     if not os.path.exists(books_file):
         books_file = os.path.join(DATA_DIR, "books.csv")
+    if not os.path.exists(books_file):
+        books_file = os.path.join(DATA_DIR, "sample_books.csv")
     
     if not os.path.exists(books_file):
-        print("[WARNING] Books.csv not found in data/. Search will return empty results.")
+        print("[WARNING] No books dataset found in data/. Search will return empty results.")
         return
 
     print(f"Indexing books from '{books_file}' for fast searching...")
@@ -263,5 +265,5 @@ def api_books():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    print(f"Starting Book Rating Linear Regression Web App on http://127.0.0.1:{port}")
-    app.run(host="127.0.0.1", port=port, debug=False)
+    print(f"Starting Book Rating Linear Regression Web App on port {port} (0.0.0.0)...")
+    app.run(host="0.0.0.0", port=port, debug=False)
