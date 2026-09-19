@@ -1,0 +1,8 @@
+"Metric","Value"
+"Train_R2",0.00704162930078702
+"Train_Adj_R2",0.006890907022296
+"Test_R2",0.00253758716913066
+"Test_RMSE",1.81905287135282
+"Test_MAE",1.46004362093347
+"Observations_Train",32946
+"Observations_Test",8237

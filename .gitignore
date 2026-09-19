@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large dataset files (downloaded via python download_data.py)
+data/*.csv
+data/*.CSV
+
+# Model checkpoints / R workspace cache
+.Rhistory
+.RData
+.Rproj.user/
+
+# Environment / OS files
+.env
+.venv
+env/
+venv/
+.DS_Store
+Thumbs.db
